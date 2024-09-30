@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Hub - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="form.html">Join Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Products Content -->
+    <main>
+        <section>
+            <h1>Our Products</h1>
+
+            <!-- Men's Collection -->
+            <div class="clothing-category">
+                <h2>Men's Collection</h2>
+                <p>Discover the latest styles for men, including suits, casual wear, and accessories.</p>
+                <div class="slider-container">
+                    <button class="prev" onclick="slideLeft('menSlider')">&#10094;</button>
+                    <div class="slider" id="menSlider">
+                        <img src="suit1.png" alt="Suit 1">
+                        <img src="suit2.png" alt="Suit 2">
+                        <img src="suit3.png" alt="Suit 3">
+                        <img src="suit4.png" alt="Suit 4">
+                        <img src="suit5.png" alt="Suit 5">
+                    </div>
+                    <button class="next" onclick="slideRight('menSlider')">&#10095;</button>
+                </div>
+                <a href="product-details.html" class="cta-button">Explore Men's Collection</a>
+            </div>
+
+            <!-- Women's Collection -->
+            <div class="clothing-category">
+                <h2>Women's Collection</h2>
+                <p>Explore chic and trendy styles for women, from dresses to outerwear.</p>
+                <div class="slider-container">
+                    <button class="prev" onclick="slideLeft('womenSlider')">&#10094;</button>
+                    <div class="slider" id="womenSlider">
+                        <img src="dress1.png" alt="Dress 1">
+                        <img src="dress2.png" alt="Dress 2">
+                        <img src="dress3.png" alt="Dress 3">
+                        <img src="dress4.png" alt="Dress 4">
+                        <img src="dress5.png" alt="Dress 5">
+                    </div>
+                    <button class="next" onclick="slideRight('womenSlider')">&#10095;</button>
+                </div>
+                <a href="product-details.html" class="cta-button">Explore Women's Collection</a>
+            </div>
+
+            <!-- Accessories Collection -->
+            <div class="clothing-category">
+                <h2>Accessories</h2>
+                <p>Find the perfect accessories to complement your outfit.</p>
+                <div class="slider-container">
+                    <button class="prev" onclick="slideLeft('accessoriesSlider')">&#10094;</button>
+                    <div class="slider" id="accessoriesSlider">
+                        <img src="accessorie1.png" alt="Accessorie 1">
+                        <img src="accessorie2.png" alt="Accessorie 2">
+                        <img src="accessorie3.png" alt="Accessorie 3">
+                        <img src="accessorie4.png" alt="Accessorie 4">
+                        <img src="accessorie5.png" alt="Accessorie 5">
+                    </div>
+                    <button class="next" onclick="slideRight('accessoriesSlider')">&#10095;</button>
+                </div>
+                <a href="product-details.html" class="cta-button">Explore Accessories</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fashion Hub. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Sliders -->
+    <script>
+        function slideLeft(sliderId) {
+            const slider = document.getElementById(sliderId);
+            slider.scrollBy({ left: -300, behavior: 'smooth' });
+        }
+
+        function slideRight(sliderId) {
+            const slider = document.getElementById(sliderId);
+            slider.scrollBy({ left: 300, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

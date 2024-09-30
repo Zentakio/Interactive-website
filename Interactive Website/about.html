@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling for page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        .team, .mission-vision {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .team-member {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .team-member p {
+            color: #777;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .highlight {
+            color: #ff6600;
+        }
+
+        @media (max-width: 768px) {
+            .team, .mission-vision {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- About Content -->
+    <main>
+        <section>
+            <h1>About <span class="highlight">Our Website</span></h1>
+            <p>Welcome to our interactive website! We are dedicated to providing users with a seamless and engaging experience.</p>
+            <p>Our goal is to deliver innovative solutions that cater to your specific needs while prioritizing usability and design.</p>
+        </section>
+
+        <!-- Mission and Vision Section -->
+        <section class="mission-vision">
+            <div>
+                <h2>Our Mission</h2>
+                <p>To create user-friendly digital platforms that enhance user engagement and provide valuable information to our visitors.</p>
+            </div>
+            <div>
+                <h2>Our Vision</h2>
+                <p>We aim to be a leader in web development, known for excellence in design, functionality, and customer satisfaction.</p>
+            </div>
+        </section>
+
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Interactive Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
